@@ -1,0 +1,8 @@
+package com.smproject.yourcityradioapp.test;
+
+public interface Playable {
+    void onTrackPrevious();
+    void onTrackPlay();
+    void onTrackPause();
+    void onTrackNext();
+}
