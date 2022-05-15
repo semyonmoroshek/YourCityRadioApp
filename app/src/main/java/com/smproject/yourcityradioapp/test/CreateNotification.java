@@ -42,6 +42,8 @@ public class CreateNotification {
                     .setSmallIcon(R.drawable.ic_music_note)
 
                     .setOnlyAlertOnce(true)//show notification for only first time
+                    .setContentTitle("track.getTitle()")
+                    .setContentText("track.getArtist()")
                     .setShowWhen(false)
                     .addAction(playbutton, "Play", pendingIntentPlay)
                     .setStyle(new androidx.media.app.NotificationCompat.MediaStyle()

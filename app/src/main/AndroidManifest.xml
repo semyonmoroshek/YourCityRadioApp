@@ -4,9 +4,7 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
-    <uses-permission android:name = "android.permission.RECORD_AUDIO"/>
-
-
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
 
     <application
         android:allowBackup="true"
@@ -15,6 +13,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.YourCityRadioApp">
+        <service
+            android:name=".fromudemy.PlayerService"
+            android:enabled="true"
+            android:exported="true"></service>
 
         <activity
             android:name=".SplashScreen"
@@ -25,9 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".MainActivityApp"/>
-
+        <activity android:name=".MainActivityApp" />
     </application>
 
 </manifest>
